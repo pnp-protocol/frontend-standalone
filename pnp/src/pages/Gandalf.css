@@ -31,23 +31,31 @@
 }
 
 .alpha-left::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   border-radius: inherit;
   padding: 1px;
-  background: repeating-conic-gradient(from var(--ants-angle, 0deg), #444 0% 2.5%, transparent 2.5% 5%);
-  -webkit-mask: 
-    linear-gradient(#fff 0 0) content-box, 
+  background: repeating-conic-gradient(
+    from var(--ants-angle, 0deg),
+    #444 0% 2.5%,
+    transparent 2.5% 5%
+  );
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
-          mask-composite: exclude;
+  mask-composite: exclude;
   animation: ants-rotate 4s linear infinite;
   transition: background 0.3s ease;
 }
 
 .alpha-left:hover::before {
-  background: repeating-conic-gradient(from var(--ants-angle, 0deg), #ff69b4 0% 2.5%, transparent 2.5% 5%);
+  background: repeating-conic-gradient(
+    from var(--ants-angle, 0deg),
+    #ff69b4 0% 2.5%,
+    transparent 2.5% 5%
+  );
 }
 
 .create-market-button {
@@ -75,7 +83,9 @@
   font-weight: 200; /* Thinner plus */
   line-height: 1;
   margin-bottom: 1rem;
-  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), color 0.3s ease;
+  transition:
+    transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    color 0.3s ease;
 }
 
 .alpha-left:hover .plus-icon {
@@ -108,23 +118,31 @@
 }
 
 .alpha-right::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   border-radius: inherit;
   padding: 1px;
-  background: repeating-conic-gradient(from var(--ants-angle, 0deg), #444 0% 2.5%, transparent 2.5% 5%);
-  -webkit-mask: 
-    linear-gradient(#fff 0 0) content-box, 
+  background: repeating-conic-gradient(
+    from var(--ants-angle, 0deg),
+    #444 0% 2.5%,
+    transparent 2.5% 5%
+  );
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
-          mask-composite: exclude;
+  mask-composite: exclude;
   animation: ants-rotate 4s linear infinite;
   transition: background 0.3s ease;
 }
 
 .alpha-right:hover::before {
-  background: repeating-conic-gradient(from var(--ants-angle, 0deg), #ff69b4 0% 2.5%, transparent 2.5% 5%);
+  background: repeating-conic-gradient(
+    from var(--ants-angle, 0deg),
+    #ff69b4 0% 2.5%,
+    transparent 2.5% 5%
+  );
 }
 
 .alpha-right .saruman-container {
@@ -143,8 +161,42 @@
 }
 
 .search-container {
-  margin-bottom: 2rem;
-  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* space between input and button */
+}
+
+.search-btn {
+  padding: 16px 32px;
+  background-color: #ff007f; /* Bootstrap primary blue */
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+.search-cancel-button {
+  padding: 16px 32px;
+  background-color: #ff007f; /* Bootstrap primary blue */
+  color: white;
+  font-weight: 600;
+  border: none;
+
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+.search-btn:hover {
+  background-color: #cc0066; /* darker pink on hover */
+}
+
+.search-btn:active {
+  background-color: #99004c; /* even darker pink on click */
 }
 
 .market-search {
@@ -283,7 +335,9 @@
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.2s ease, transform 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
 }
 
 .gandalf-modal-button:hover:not(:disabled) {
@@ -317,7 +371,9 @@
   cursor: pointer;
   padding: 0.3rem;
   line-height: 1;
-  transition: color 0.2s ease, transform 0.2s ease;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
 }
 
 .gandalf-modal-close:hover {
@@ -477,7 +533,7 @@
   margin-top: 1rem;
   font-size: 0.8rem;
   text-align: center;
-  min-height: 1em; 
+  min-height: 1em;
 }
 
 /* Add these new styles for the trade button and wrapper */
@@ -486,4 +542,3 @@
   height: 100%;
   position: relative;
 }
-
