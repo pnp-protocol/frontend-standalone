@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import Navbar from './components/Navbar';
 import PriceMarkets from './pages/PriceMarkets';
 import TokenMarket from './pages/TokenMarket';
+import Footer from './components/Footer';
 
 function HomePage() {
   return (
@@ -96,7 +97,7 @@ function HomePage() {
           </div>
         </div>
       </div>
-
+      <Footer /> {/* Footer placed only once here */}
     </>
   );
 }
