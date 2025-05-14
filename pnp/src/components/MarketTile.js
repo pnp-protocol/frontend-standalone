@@ -78,4 +78,3 @@ const MarketTile = (marketData) => {
 };
 
 export default MarketTile;
-

@@ -527,6 +527,7 @@ const Gandalf = () => {
         sortedMarkets,
       );
       setSampleMarkets(sortedMarkets);
+
       setMarket(sortedMarkets);
     } catch (error) {
       console.error("Error fetching markets:", error);
@@ -1022,8 +1023,6 @@ const Gandalf = () => {
     }
   };
 
-  function filterSearch() {}
-
   return (
     <div className="gandalf-container">
       {showWelcomePopup && (
@@ -1152,7 +1151,6 @@ const Gandalf = () => {
 
                 console.log(filterMarkItems);
                 setInputSearch("");
-              } else {
               }
             }}
             className="search-btn"
@@ -1186,4 +1184,3 @@ const Gandalf = () => {
 };
 
 export default Gandalf;
-

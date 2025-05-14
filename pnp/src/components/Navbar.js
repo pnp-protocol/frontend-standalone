@@ -89,6 +89,14 @@ const Navbar = () => {
           >
             How it works?
           </button>
+
+          <button 
+            className="nav-button"
+            onClick={() => navigate('/roadmap')}
+          >
+            Roadmap
+          </button>
+
           <button 
             className="nav-button" 
             onClick={() => navigate('/gandalf')}
